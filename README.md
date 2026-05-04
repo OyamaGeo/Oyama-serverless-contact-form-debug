@@ -1,4 +1,4 @@
-# Oyama broken-contact-form-project
+# broken-contact-form-project
 Serverless contact form built with AWS (API Gateway, Lambda, DynamoDB, SNS) with real-world debugging and IAM troubleshooting
 
 
