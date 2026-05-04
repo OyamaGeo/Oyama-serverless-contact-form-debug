@@ -7,7 +7,8 @@ Serverless Contact Form (AWS)
 
 ![Architecture Diagram](images/architecture-diagram.png)
 
- PROJECT OVERVIEW
+
+**PROJECT OVERVIEW**
 
 This project demonstrates the design, implementation, and troubleshooting of a serverless contact form application built using AWS services.
 
