@@ -1,7 +1,7 @@
 # Oyama broken-contact-form-project
 Serverless contact form built with AWS (API Gateway, Lambda, DynamoDB, SNS) with real-world debugging and IAM troubleshooting
 
-![Architecture Diagram](images/architecture-diagram.png)
+![Architecture Diagram](Oyama-broken-contact-form-project/bcf arch.png)
 
 
 **PROJECT OVERVIEW**
@@ -25,7 +25,7 @@ This application uses a fully serverless architecture:
 
 Architecture Diagram
 
-![Serverless Architecture Diagram](images/architecture-diagram/.png)
+![Serverless Architecture Diagram](Oyama-broken-contact-form-project/bcf arch.png)
 
 ---
 
