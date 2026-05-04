@@ -105,11 +105,14 @@ The system was debugged using a structured approach:
 
 **Project Structure**
 
-```text
 broken-contact-form-project/
 ├── README.md
 ├── images/
 │   └── architecture-diagram.png
 ├── lambda/
+│   └── function.js
 ├── template.yaml
+├── fixes/
+│   ├── iam-policy.json
+│   └── lambda-fixed-code.js
 └── notes.md
