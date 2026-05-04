@@ -97,18 +97,3 @@ The system was debugged using a structured approach:
 - Troubleshooting distributed systems effectively
 - Moving from “building” to engineering and debugging systems
 
----
-
-**Project Structure**
-
-broken-contact-form-project/
-├── README.md
-├── images/
-│   └── architecture-diagram.png
-├── lambda/
-│   └── function.js
-├── template.yaml
-├── fixes/
-│   ├── iam-policy.json
-│   └── lambda-fixed-code.js
-└── notes.md
