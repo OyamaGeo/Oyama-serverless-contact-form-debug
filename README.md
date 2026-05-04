@@ -16,7 +16,7 @@ The primary goal was not just to build a working system, but to simulate real-wo
 
 The architecture follows an event-driven serverless model using API Gateway, AWS Lambda, DynamoDB, and SNS.
 
- SYSTEM ARCHITECTURE
+ **SYSTEM ARCHITECTURE**
 
 This application uses a fully serverless architecture:
 
@@ -33,7 +33,7 @@ Architecture Diagram
 
 ---
 
-Data Flow
+**DATA FLOW**
 
 1. User submits the contact form via API Gateway (`/submit` endpoint)
 2. API Gateway invokes the AWS Lambda function
@@ -44,7 +44,7 @@ Data Flow
 
 ---
 
-AWS SERVICES USED
+**AWS SERVICES USED**
 
 - Amazon API Gateway
 - AWS Lambda
@@ -55,7 +55,7 @@ AWS SERVICES USED
 
 ---
 
- SIMULATED FAILURE SCENARIOS
+ **SIMULATED FAILURE SCENARIOS**
 
 This project intentionally included real-world failure conditions to simulate production debugging:
 
@@ -68,7 +68,7 @@ This project intentionally included real-world failure conditions to simulate pr
 
 ---
 
- TROUBLESHOOTING PROCESS
+ **TROUBLESHOOTING PROCESS**
 
 The system was debugged using a structured approach:
 
@@ -83,7 +83,7 @@ The system was debugged using a structured approach:
 
 ---
 
-FINAL OUTCOME
+**FINAL OUTCOME**
 
 - API Gateway returns 200 OK
 - Data is successfully stored in DynamoDB
@@ -92,7 +92,7 @@ FINAL OUTCOME
 
 ---
 
- Key Learnings
+ **Key Learnings**
 
 - Understanding serverless architecture and service integration
 - Debugging Lambda functions using CloudWatch logs
@@ -103,7 +103,7 @@ FINAL OUTCOME
 
 ---
 
-Project Structure
+**Project Structure**
 
 ```text
 broken-contact-form-project/
