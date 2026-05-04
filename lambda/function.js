@@ -51,7 +51,7 @@ exports.handler = async (event) => {
       timestamp: new Date().toISOString()
     };
 
-    // 🔥 DynamoDB write
+    //DynamoDB write
     await dynamo.put({
       TableName: "ContactFormSubmissions",
       Item: item
@@ -59,12 +59,12 @@ exports.handler = async (event) => {
 
     console.log("Saved to DynamoDB:", item);
 
-    // 🔥 ENV VARIABLE CHECK (IMPORTANT FIX)
+    // ENV VARIABLE CHECK (IMPORTANT FIX)
     if (!process.env.SNS_TOPIC_ARN) {
       throw new Error("SNS_TOPIC_ARN environment variable is missing");
     }
 
-    // 🔥 SNS publish
+    // SNS publish
     await sns.publish({
       TopicArn: process.env.SNS_TOPIC_ARN,
       Subject: `New Contact Form Submission from ${name}`,
@@ -83,7 +83,7 @@ exports.handler = async (event) => {
     };
 
   } catch (error) {
-    // 🚨 CRITICAL FIX: show real error
+    // CRITICAL FIX: show real error
     console.error("FULL ERROR:", error);
 
     return {
