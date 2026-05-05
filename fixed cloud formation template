@@ -8,10 +8,7 @@ Parameters:
     Default: your-email@example.com
 
 Resources:
-
-  # -------------------------
   # DynamoDB Table
-  # -------------------------
   ContactFormTable:
     Type: AWS::DynamoDB::Table
     Properties:
@@ -24,9 +21,7 @@ Resources:
         - AttributeName: id
           KeyType: HASH
 
-  # -------------------------
   # SNS Topic
-  # -------------------------
   ContactFormTopic:
     Type: AWS::SNS::Topic
     Properties:
@@ -40,9 +35,7 @@ Resources:
       Endpoint: !Ref EmailAddress
       TopicArn: !Ref ContactFormTopic
 
-  # -------------------------
   # IAM Role (FIXED)
-  # -------------------------
   ContactFormRole:
     Type: AWS::IAM::Role
     Properties:
@@ -72,9 +65,7 @@ Resources:
                   - sns:Publish
                 Resource: !Ref ContactFormTopic
 
-  # -------------------------
   # Lambda Function (FIXED)
-  # -------------------------
   ContactFormFunction:
     Type: AWS::Lambda::Function
     Properties:
@@ -153,9 +144,8 @@ Resources:
             }
           };
 
-  # -------------------------
   # API Gateway
-  # -------------------------
+  
   ContactFormApi:
     Type: AWS::ApiGateway::RestApi
     Properties:
